@@ -5,8 +5,8 @@ MAINTAINER Juan Marin Otero <juan.marin.otero@gmail.com>
 RUN yum -y update; yum clean all
 RUN yum -y install wget
 RUN yum -y install unzip
-RUN wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
-RUN rpm -ivh epel-release-7-5.noarch.rpm
+RUN wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-6.noarch.rpm
+RUN rpm -ivh epel-release-7-6.noarch.rpm
 
 RUN yum -y install python-setuptools; yum clean all
 RUN easy_install pip
